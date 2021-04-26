@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react'
 import './App.css';
+import {client} from './client'
+import Blogs from './components/Blogs'
 
 function App() {
+
+  const [articles, setArticles] = useState([]) 
+
+  useEffect(() => {
+    client.getEntries({
+    content_type : 'blogPost'
+    })
+    .then(response => setArticles(response.items))
+    .catch(error => console.log(error))
+  }, [])
+
+  console.log(articles)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+        <Blogs blogs={articles} />
+      </main>
+
     </div>
   );
 }
 
 export default App;
+
+
