@@ -5,7 +5,8 @@ import Blogs from './components/Blogs'
 
 function App() {
 
-  const [articles, setArticles] = useState([]) 
+  const [articles, setArticles] = useState([]);
+  console.log(articles);
 
   useEffect(() => {
     client.getEntries({
@@ -14,8 +15,6 @@ function App() {
     .then(response => setArticles(response.items))
     .catch(error => console.log(error))
   }, [])
-
-  console.log(articles)
 
   return (
     <div className="App">
