@@ -1,7 +1,8 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
 import './App.css';
-import {client} from './client'
-import Blogs from './components/Blogs'
+import {client} from './client';
+import Blogs from './components/Blogs';
+
 
 function App() {
 
