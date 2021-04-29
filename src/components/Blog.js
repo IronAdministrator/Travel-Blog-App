@@ -8,63 +8,44 @@ import '../App.css';
 import marked from 'marked'; // need to install marked
 
 const Blog = ({article}) => {
-    console.log(article)
+    
 
-    const {title, blogEntry, image, location, date} = article.fields;
+    const {title, blogEntry, image, location, date, continent} = article.fields;
     const blogDescription = marked(blogEntry)  // to format text into html format
+    console.log(continent);
+    console.log(article);
 
     return (
-        <div className='container'>
-            {/* <Card  style={{ width: '50rem' }}>
-                <CardBody>
-                    <CardTitle tag='h1'>
-                        {title}
-                    </CardTitle>
-                    <CardSubtitle tag='h4'>
-                        Location: {location}
-                    </CardSubtitle>
-                    <CardSubtitle>
-                        {date}
-                    </CardSubtitle>
-                </CardBody>
-                <img  src={image[0].fields.file.url} />
-                <CardBody>
-                    <CardText>
-                        <section dangerouslySetInnerHTML={{ __html: blogDescription }}  />
-                    </CardText>
-                </CardBody>
-            </Card> */}
-
-
+        <div>
             <div className='card'>
-                <div className='blog-entries'>
+                <div className='blog-cards'>
                     <h1 className='title'>{title}</h1>
                     <div className='location-date-time'>
                         <div><b>Location:</b> {location} </div>
                         <div><b>Posted at:</b> {date}</div>
                     </div>
-                    <div className='blog-image'>
+                    <div className='blog-images'>
                     
                         <Carousel>
                             <Carousel.Item>
-                                <img src={image[0].fields.file.url}/>
+                                <img src={image[0].fields.file.url} className='blog-image'/>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img src={image[1].fields.file.url}/>
+                                <img src={image[1].fields.file.url} className='blog-image'/>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img src={image[2].fields.file.url}/>
+                                <img src={image[2].fields.file.url} className='blog-image'/>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img src={image[3].fields.file.url}/>
+                                <img src={image[3].fields.file.url} className='blog-image'/>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img src={image[4].fields.file.url}/>
+                                <img src={image[4].fields.file.url} className='blog-image'/>
                             </Carousel.Item>
                         </Carousel>
                         
                     </div>
-                    <div className='description'>
+                    <div className='blog-entry'>
                         <section dangerouslySetInnerHTML={{ __html: blogDescription }} />
                     </div>
                 </div>

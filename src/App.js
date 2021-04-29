@@ -10,12 +10,15 @@ import Africa from './components/Africa';
 import Europe from './components/Europe';
 import Asia from './components/Asia';
 import JumboImage from './components/JumboImage';
+import AboutUs from './components/AboutUs';
+
 
 
 
 function App() {
 
   const [articles, setArticles] = useState([]);
+  
   console.log(articles);
 
   useEffect(() => {
@@ -26,14 +29,19 @@ function App() {
     .catch(error => console.log(error))
   }, [])
 
-  return (
-    <div className="App">
-      <Router>
-        <NavBar />
-        <JumboImage />
+  //const handlePageScroll = () => titleRef.current.scrollIntoView({ behavior: 'smooth' });
 
+const handlePageScroll = () => {window.scrollTo(0, 0)};
+
+  return (
+    <div >
+      <Router>
+        <NavBar handlePageScroll={handlePageScroll}/>
+
+    
         <Switch>
           <Route exact path='/'>
+          <JumboImage />
             <Blogs blogs={articles} />
           </Route>
           <Route exact path='/america'>
@@ -48,12 +56,13 @@ function App() {
           <Route exact path='/europe'>
             <Europe europeBlogs={articles} />
           </Route>
+          <Route exact path='/aboutus'>
+            <AboutUs />
+          </Route>
         </Switch>
       </Router>
-
-
-
-      <Footer />
+      
+      <Footer handlePageScroll={handlePageScroll}/>
 
     </div>
   );

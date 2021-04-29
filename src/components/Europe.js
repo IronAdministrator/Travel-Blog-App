@@ -1,22 +1,28 @@
 import React from 'react';
+import Blog from './Blog';
 import '../App.css';
-import EuropeBlogs from './EuropeBlogs';
 
 
 const Europe = ({europeBlogs}) => {
+    console.log(europeBlogs)
     
     return(
-        <>
-        <h1>Europe</h1>
+        <div className='container morepadding'>
+        <hr className="text-countries-hr" />
         <div>
-            {europeBlogs.map((europe, index) => {
-           return ( 
-            <EuropeBlogs key={index} article={europe} />
-           ); 
-        })
-    }
+        <h1 className="text-countries">Europe</h1></div>
+        <hr className="text-countries-hr" />
+        <div>
+            {
+                europeBlogs.filter(blog =>
+                     blog.fields.continent === 'Europe').map((blog, index) => {
+                        return ( 
+                         <Blog key={index} article={blog} /> 
+                        ); 
+                     })
+            }
         </div>
-        </>
+        </div>
     )
 }
 
