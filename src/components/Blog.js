@@ -8,10 +8,12 @@ import '../App.css';
 import marked from 'marked'; // need to install marked
 
 const Blog = ({article}) => {
-    console.log(article)
+    
 
-    const {title, blogEntry, image, location, date} = article.fields;
+    const {title, blogEntry, image, location, date, continent} = article.fields;
     const blogDescription = marked(blogEntry)  // to format text into html format
+    console.log(continent);
+    console.log(article);
 
     return (
         <div className='container'>
