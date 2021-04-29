@@ -8,7 +8,9 @@ import {
   Nav,
   NavItem } from "reactstrap";
 import {Link} from 'react-router-dom';
-
+import JumboImage from './JumboImage';
+import './NavBar.css';
+import '../App.css';
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +18,7 @@ const NavBar = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div className="container-fluid sticky_nav">
       <Navbar light expand="md" className="nav-main">
         <NavbarBrand href="/">
           <Link exact to="/">
@@ -42,6 +44,8 @@ const NavBar = (props) => {
           </Nav>
         </Collapse>
       </Navbar>
+
+
     </div>
   );
 };

@@ -9,6 +9,7 @@ import America from './components/America';
 import Africa from './components/Africa';
 import Europe from './components/Europe';
 import Asia from './components/Asia';
+import JumboImage from './components/JumboImage';
 
 
 
@@ -29,7 +30,8 @@ function App() {
     <div className="App">
       <Router>
         <NavBar />
-    
+        <JumboImage />
+
         <Switch>
           <Route exact path='/'>
             <Blogs blogs={articles} />
@@ -48,6 +50,8 @@ function App() {
           </Route>
         </Switch>
       </Router>
+
+
 
       <Footer />
 
