@@ -1,13 +1,13 @@
 import React from 'react';
+import Blog from './Blog';
 import '../App.css';
-import Blog from './Blog'
 
 
 const Europe = ({europeBlogs}) => {
     console.log(europeBlogs)
     
     return(
-        <>
+        <div className='container'>
         <h1>Europe</h1>
         <div>
             {
@@ -19,7 +19,7 @@ const Europe = ({europeBlogs}) => {
                      })
             }
         </div>
-        </>
+        </div>
     )
 }
 

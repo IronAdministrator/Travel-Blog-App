@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import './App.css';
 import {client} from './client';
 import NavBar from './components/NavBar';
@@ -12,9 +12,11 @@ import Asia from './components/Asia';
 
 
 
+
 function App() {
 
   const [articles, setArticles] = useState([]);
+  const titleRef = useRef();   // for scrolling up page
   console.log(articles);
 
   useEffect(() => {
@@ -25,10 +27,12 @@ function App() {
     .catch(error => console.log(error))
   }, [])
 
+  const handlePageScroll = () => titleRef.current.scrollIntoView({ behavior: 'smooth' });
+
   return (
-    <div className="App">
+    <div >
       <Router>
-        <NavBar />
+        <NavBar titleRef={titleRef}/>
     
         <Switch>
           <Route exact path='/'>
@@ -48,8 +52,8 @@ function App() {
           </Route>
         </Switch>
       </Router>
-
-      <Footer />
+      
+      <Footer handlePageScroll={handlePageScroll}/>
 
     </div>
   );

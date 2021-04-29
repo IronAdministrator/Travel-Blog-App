@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../App.css';
 import Logo from "../images/TBL_logo_small_v02.svg";
 import {
   Collapse,
@@ -11,12 +12,13 @@ import {Link} from 'react-router-dom';
 
 
 const NavBar = (props) => {
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div ref={props.titleRef} className='container-fluid'>
       <Navbar light expand="md" className="nav-main">
         <NavbarBrand href="/">
           <Link exact to="/">

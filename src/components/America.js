@@ -1,10 +1,11 @@
 import React from 'react';
 import Blog from './Blog';
+import '../App.css';
 
 
 const America = ({americaBlogs}) => {
     return(
-        <>
+        <div className='container'>
         <h1>America</h1>
         <div>
             {
@@ -16,7 +17,7 @@ const America = ({americaBlogs}) => {
                      })
             }
         </div>
-        </>
+        </div>
     )
 }
 
