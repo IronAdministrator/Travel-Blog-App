@@ -1,15 +1,13 @@
 import React, { useState } from "react";
-import Logo from "../images/TBL_logo_with_title.svg";
+import Logo from "../images/TBL_logo_small_v02.svg";
 import {
   Collapse,
   Navbar,
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink,
-} from "reactstrap";
-// import {NavLink} from 'react-router-dom';
+  NavItem } from "reactstrap";
+import {Link} from 'react-router-dom';
 
 
 const NavBar = (props) => {
@@ -21,22 +19,25 @@ const NavBar = (props) => {
     <div>
       <Navbar light expand="md" className="nav-main">
         <NavbarBrand href="/">
-          <img className="logo-img" src={Logo} alt="logo_with_title"></img>
+          <Link exact to="/">
+             <img className="logo-img" src={Logo} alt="logo" />
+          </Link>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
+          
             <NavItem>
-              <NavLink href="/components/">America</NavLink>
+              <Link exact to="/america">America</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/">Europe</NavLink>
+              <Link exact to="/europe">Europe</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/">Asia</NavLink>
+              <Link exact to="/asia">Asia</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/">Africa</NavLink>
+              <Link exact to="/africa">Africa</Link>
             </NavItem>
           </Nav>
         </Collapse>
