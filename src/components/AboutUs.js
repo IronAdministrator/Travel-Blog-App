@@ -15,8 +15,8 @@ const AboutUs = () => {
             <div className="about-wrapper">
                 
                 <div className='about-text'>
-                    <p>We're just a few people who like traveling and sharing our experiences.<br/>
-                    Through our stories we hope it inspires you to fly to a far off place and see the beauties of the world!</p>
+                    <p>We're just a few people who like traveling and sharing our experiences.
+                    We hope our stories inspire you to fly to that far off place you've always want to go to.and see the beauties of the world!</p>
                 </div>
                 
                 <div className="about-profile"> 

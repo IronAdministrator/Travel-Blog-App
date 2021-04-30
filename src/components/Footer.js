@@ -6,7 +6,7 @@ import { Container } from "reactstrap";
 const year = new Date().getFullYear();
 const Footer = ({handlePageScroll}) => {
   return (
-    <Container className="themed-container footer-copyright" fluid={true}>
+    <Container className="themed-container footer-copyright" fluid="true">
      <div className='footer'>
        <div>
           <span>Copyright © {year} All Rights Reserved</span>

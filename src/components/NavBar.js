@@ -33,21 +33,21 @@ const NavBar = ({handlePageScroll}) => {
             <NavItem className='nav-items'>
               <Link exact to="/america" className='nav-link-color' onClick={handlePageScroll}>America</Link>
             </NavItem>
-            <NavItem className='nav-items'>|</NavItem>
+
             <NavItem className='nav-items'>
               <Link exact to="/europe" className='nav-link-color' onClick={handlePageScroll}>Europe</Link>
             </NavItem>
-            <NavItem className='nav-items'>|</NavItem>
+
             <NavItem className='nav-items'>
               <Link exact to="/asia" className='nav-link-color' onClick={handlePageScroll}>Asia</Link>
             </NavItem>
-            <NavItem className='nav-items'>|</NavItem>
+
             <NavItem className='nav-items'>
               <Link exact to="/africa" className='nav-link-color' onClick={handlePageScroll}>Africa</Link>
             </NavItem>
-            <NavItem className='nav-items'>|</NavItem>
+
             <NavItem className='nav-items'>
-              <Link exact to="/aboutus" className='nav-link-color' onClick={handlePageScroll}>About Us</Link>
+              <Link exact to="/aboutus" className='nav-link-color-about' onClick={handlePageScroll}>About Us</Link>
             </NavItem>
           </Nav>
         </Collapse>
