@@ -7,7 +7,7 @@ const JumboImage = () => {
 
 
 return (
-        <div className="bg">
+        <div className="bg shadowy">
 
 {/* <img className="bg" src="http://images.ctfassets.net/t0fd7bi3x7x9/4LJunZJXwYGH53Rq5Pkst9/8d1e4631a04e6b06c16c00bee54b1078/_RJD1709-2s.jpg" alt="Tokyo" /> */}
 
