@@ -22,7 +22,7 @@ const Blog = ({article}) => {
                     <h1 className='title'>{title}</h1>
                     <div className='location-date-time'>
                         <div><b>Location:</b> {location} </div>
-                        <div><b>Posted at:</b> {date}</div>
+                        <div><b>Posted on:</b> {date}</div>
                     </div>
                     <div className='blog-images'>
                     
