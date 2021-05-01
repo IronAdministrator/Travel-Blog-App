@@ -5,6 +5,7 @@
 }
 
 .nav {
+/*     background-color: #ffffff2c; */
     top:0;
     position:fixed;
     height: 120px; 
@@ -14,7 +15,7 @@
     transition: 1s;
   }
 
-  .nav-blue {
+  .nav_blue {
       background-color: #ffffff;
       /* background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(0,186,223,1) 400%); */
       box-shadow: 0 4px 5px 0 rgba(0,0,0,0.2);
@@ -24,6 +25,10 @@
     padding: 0.5rem 3rem !important;
   }
   
+  .nav_height_only {
+    height: 60px;
+  }
+
   .nav-items {
     color: #019fc9;
     font-weight: bold;
@@ -43,3 +48,10 @@
     /*   font-family: 'Signika', sans-serif; */
     color: #d62e17;
   }
+
+  .logo_smaller {
+    height: 50px;  
+    transition-timing-function: ease-in;
+    transition: .5s;
+    margin: -2em;
+   }

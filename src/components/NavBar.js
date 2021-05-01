@@ -11,7 +11,6 @@ import {
 import {Link} from 'react-router-dom';
 import JumboImage from './JumboImage';
 import './NavBar.css';
-import '../App.css';
 
 const NavBar = ({handlePageScroll}) => {
 
@@ -40,12 +39,12 @@ const NavBar = ({handlePageScroll}) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-      <div className={`nav ${show && 'nav-blue'}`}>
-            <div className='container-fluid sticky-nav'>
+      <div className={`nav ${show && 'nav_blue nav_height_only'}`}>
+            <div className='container-fluid sticky_nav'>
               <Navbar light expand="md" className="nav-main">
                 <NavbarBrand href="/">
                   <Link exact to="/" onClick={handlePageScroll}>
-                    <img className="logo-img" src={Logo} alt="logo" />
+                  <img className={`logo-img ${show && 'logo_smaller'}`} src={Logo} alt="logo" />
                   </Link>
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
