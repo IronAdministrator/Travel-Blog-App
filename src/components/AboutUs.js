@@ -1,6 +1,6 @@
 import React from 'react';
-
 import '../App.css';
+import Utsavi_Photo from '../images/IMG_4619.JPG';
 
 const AboutUs = () => {
 
@@ -16,24 +16,24 @@ const AboutUs = () => {
                 
                 <div className='about-text'>
                     <p>We're just a few people who like traveling and sharing our experiences.
-                    We hope our stories inspire you to fly to that far off place you've always want to go to.and see the beauties of the world!</p>
+                    We hope our stories inspire you to fly and see the beauties of the world!</p>
                 </div>
                 
                 <div className="about-profile"> 
                         <div className="about-cards">
-                           <div><img className="about-photo" src="http://images.ctfassets.net/t0fd7bi3x7x9/6MRqOHJ5oJD769H2iocyr2/16cd1f956defde4197cb72f8d3aec0ef/DSC_5567_-_Copy.jpg" alt="Profile Photo"/></div>
+                           <div><img className="about-photo" src={Utsavi_Photo} alt="Profile Photo"/></div>
                            <div><hr className="text-countries-hr" /></div>
                            <div><p className="about-profile-names">Utsavi</p>
                            <p>Favorite Places to Visit:</p>
                             <ul>
                                 <li>
-                                Japan
+                                South India
                                 </li>
                                 <li>
-                                    Southwest USA
+                                    USA
                                 </li>
                                 <li>
-                                    Ireland
+                                    Europe
                                 </li>
                             </ul>
                            </div>
