@@ -5,7 +5,7 @@ import '../App.css';
 const Blogs = ({blogs}) => {
     return (
         <div className='container'>
-            <div>
+            <div className='blogs'>
                 {blogs.map((blog, index) => <Blog key={index} article={blog} />)}
             </div>
         </div>

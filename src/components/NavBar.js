@@ -21,7 +21,7 @@ const NavBar = ({handlePageScroll}) => {
     
       const [show, setShow] = useState(false);
       const navbarControl = () => {
-        if (window.scrollY > 400) {
+        if (window.scrollY > 100) {
           setShow(true)
         } else {
           setShow(false)
@@ -40,8 +40,8 @@ const NavBar = ({handlePageScroll}) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-      <div className={`nav ${show && 'nav_blue'}`}>
-            <div className='container-fluid sticky_nav'>
+      <div className={`nav ${show && 'nav-blue'}`}>
+            <div className='container-fluid sticky-nav'>
               <Navbar light expand="md" className="nav-main">
                 <NavbarBrand href="/">
                   <Link exact to="/" onClick={handlePageScroll}>
