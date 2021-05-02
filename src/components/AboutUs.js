@@ -40,23 +40,26 @@ const AboutUs = () => {
                        </div> 
 
                        <div className="about-cards">
-                           <div><img className="about-photo" src="http://images.ctfassets.net/t0fd7bi3x7x9/6MRqOHJ5oJD769H2iocyr2/16cd1f956defde4197cb72f8d3aec0ef/DSC_5567_-_Copy.jpg" alt="Profile Photo"/></div>
-                           <div><hr className="text-countries-hr" /></div>
-                           <div><p className="about-profile-names">Aryan</p>
-                           <p>Favorite Places to Visit:</p>
+                        <div>
+                            <img
+                            className="about-photo"
+                            src="https://scontent-frx5-1.xx.fbcdn.net/v/t31.18172-8/13584881_1001766123232467_601648257814696358_o.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=k_0nsQ8V7VUAX8iJY_r&_nc_ht=scontent-frx5-1.xx&oh=bcdc85de3adb9e19fb39f8116199cecf&oe=60B568E9"
+                            alt="Profile"
+                            />
+                        </div>
+                        <div>
+                            <hr className="text-countries-hr" />
+                        </div>
+                        <div>
+                            <p className="about-profile-names">Aryan</p>
+                            <p>Favorite Places to Visit:</p>
                             <ul>
-                                <li>
-                                Japan
-                                </li>
-                                <li>
-                                    Southwest USA
-                                </li>
-                                <li>
-                                    Ireland
-                                </li>
+                            <li>Europe</li>
+                            <li>Africa</li>
+                            <li>South America</li>
                             </ul>
-                           </div>
-                       </div> 
+                        </div>
+                        </div>
 
                        <div className="about-cards">
                            <div><img className="about-photo" src="http://images.ctfassets.net/t0fd7bi3x7x9/6MRqOHJ5oJD769H2iocyr2/16cd1f956defde4197cb72f8d3aec0ef/DSC_5567_-_Copy.jpg" alt="Profile Photo"/></div>

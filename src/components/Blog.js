@@ -15,6 +15,9 @@ const Blog = ({article}) => {
     console.log(continent);
     console.log(article);
 
+    const newTime = date.split('T')[0]
+    console.log(newTime);
+
     return (
         <div>
             <div className='card'>
@@ -22,7 +25,7 @@ const Blog = ({article}) => {
                     <h1 className='title'>{title}</h1>
                     <div className='location-date-time'>
                         <div><b>Location:</b> {location} </div>
-                        <div><b>Posted on:</b> {date}</div>
+                        <div><b>Posted on:</b> {newTime}</div>
                     </div>
                     <div className='blog-images'>
                     
