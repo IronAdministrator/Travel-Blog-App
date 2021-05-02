@@ -132,11 +132,12 @@ button {
 }
 
 .about-cards {
-  width: 20vw;
+  width: 15vw;
   margin: 0px 0%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
   margin-bottom: 1em;
 }
 
@@ -147,8 +148,10 @@ button {
 }
 
 .about-photo {
-  height: 20vw;
-  width: auto;
+  width: 20vw;
+/*   height: 16vh; */
+  border-radius: 2em;
+  border: 2px;
 }
 
 .shadowy {

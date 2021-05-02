@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import Utsavi_Photo from '../images/IMG_4619.JPG';
+import Utsavi_Photo from '../images/IMG_4619_crop.jpg';
 
 const AboutUs = () => {
 
