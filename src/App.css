@@ -20,12 +20,12 @@ html {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 800px;
-  margin: 1.5rem auto 1.5rem auto;
+  margin: 3rem auto 1.5rem auto;
   text-align: left;
 }
 
 .blog-cards {
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1.5rem 3rem;
 }
 
 .blogs {
