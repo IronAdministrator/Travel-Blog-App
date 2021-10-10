@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6d2707cf.chunk.css",
+    "main.js": "/static/js/main.7cc54c67.chunk.js",
+    "main.js.map": "/static/js/main.7cc54c67.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d4058ee9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d4058ee9.js.map",
+    "static/css/2.63f31f8d.chunk.css": "/static/css/2.63f31f8d.chunk.css",
+    "static/js/2.12b9cac3.chunk.js": "/static/js/2.12b9cac3.chunk.js",
+    "static/js/2.12b9cac3.chunk.js.map": "/static/js/2.12b9cac3.chunk.js.map",
+    "static/js/3.11f2e430.chunk.js": "/static/js/3.11f2e430.chunk.js",
+    "static/js/3.11f2e430.chunk.js.map": "/static/js/3.11f2e430.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.019b334e700782fec64a90139fff82c7.js": "/precache-manifest.019b334e700782fec64a90139fff82c7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.63f31f8d.chunk.css.map": "/static/css/2.63f31f8d.chunk.css.map",
+    "static/css/main.6d2707cf.chunk.css.map": "/static/css/main.6d2707cf.chunk.css.map",
+    "static/js/2.12b9cac3.chunk.js.LICENSE.txt": "/static/js/2.12b9cac3.chunk.js.LICENSE.txt",
+    "static/media/IMG_4619_crop.jpg": "/static/media/IMG_4619_crop.10184dc7.jpg",
+    "static/media/TBL_logo_small_v02.svg": "/static/media/TBL_logo_small_v02.03c4c6d9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d4058ee9.js",
+    "static/css/2.63f31f8d.chunk.css",
+    "static/js/2.12b9cac3.chunk.js",
+    "static/css/main.6d2707cf.chunk.css",
+    "static/js/main.7cc54c67.chunk.js"
+  ]
+}
