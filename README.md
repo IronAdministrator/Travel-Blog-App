@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Travel_blog_app with Contentful database.
+
+deployed on [Netlify](https://amazing-spence-aa3f69.netlify.app)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
